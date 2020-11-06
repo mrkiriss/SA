@@ -1,0 +1,102 @@
+import java.util.*;
+
+public class Lesson12 {
+    public static void Task_6() {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        System.out.println(a % 10);
+    }
+    public static void Task_7() {
+        Scanner in = new Scanner(System.in);
+        byte a = in.nextByte();
+        System.out.println(a / 10);
+    }
+    public static void Task_8() {
+        Scanner in = new Scanner(System.in);
+        short a = in.nextShort();
+        System.out.println(a / 100 + (a/10)%10 + a%10);
+    }
+    public static void Task_9() {
+        Scanner in = new Scanner(System.in);
+        short a = in.nextShort(), b = in.nextShort();
+        System.out.println(a*a+b*b);
+    }
+    public static void Task_1() {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        System.out.println(a % 10);
+    }
+    public static void Task_2() {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        System.out.println(a / 100 + (a/10)%10 + a%10);
+    }
+    public static void Task_3() {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        System.out.println(a+1+(a+1)%2);
+    }
+    public static void Task_4() {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt(), b = in.nextInt(), n = in.nextInt();
+        System.out.print(a*n+(b*n)/100);
+        System.out.print(' ');
+        System.out.println((b*n)%100);
+    }
+    public static void Task_5() {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt(),h,m,s,h0;
+        String str="";
+        h=(n/60/60)%24;
+        h0=n/60/60;
+        m=(n-h0*3600)/60;
+        s=n-h0*3600-m*60;
+        str+=String.valueOf(h)+':';
+        if (m<10) {
+            str += '0';
+        }
+        str+=String.valueOf(m)+':';
+        if (s<10) {
+            str += '0';
+        }
+        str+=String.valueOf(s);
+        System.out.println(str);
+    }
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int task=in.nextInt();
+        while (task!=0) {
+            switch (task) {
+                case 1:
+                    Task_1();
+                    break;
+                case 2:
+                    Task_2();
+                    break;
+                case 3:
+                    Task_3();
+                    break;
+              case 4:
+                  Task_4();
+                  break;
+              case 5:
+                  Task_5();
+                  break;
+                case 6:
+                    Task_6();
+                    break;
+                case 7:
+                    Task_7();
+                    break;
+                case 8:
+                    Task_8();
+                    break;
+                case 9:
+                    Task_9();
+                    break;
+            }
+            task=in.nextInt();
+        }
+    }
+}
