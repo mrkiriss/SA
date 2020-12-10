@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Authorization</string>
+    <string name="pre_auto">Введите логин и пароль:</string>
+    <string name="help">admin none</string>
+    <string name="reg">Регистрация нового пользователя</string>
+    <string name="button_reg">Зарегистрироваться</string>
+
+</resources>
